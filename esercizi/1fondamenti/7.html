@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">7</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Metodo della parabola</h3>
+    <br>
+    <div class="esempi-container">
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/7-4q_OwrISA?si=mo7tiwn9gWOloPzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        <br>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/LFutYV_HdWQ?si=gPAapImp2W3ZeQlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+        <br>
+        <br>
+
+        Consideriamo il polinomio
+        \[
+        3x^2 +2x -5
+        \]
+        Il <b>segno</b> di questo polinomio dipende dal valore che assegnamo alla \(x\).
+        <br>
+        <br>
+        Raccogliamo qualche esempio nella taballa che segue
+        <br>
+        <br>
+        <div style="width: 100%; overflow-x:auto">
+            <table style="margin: 0.1rem">
+                <tbody><tr>
+                    <th>
+                        \[
+                        \text{valore di}\,\,\,\color{red}{x}
+                        \]
+                    </th>
+                    <th style="font-size: 0.9rem;">
+                        \[
+                        \text{valore di}\,\,\, 3\color{red}{x}\color{black}{}^2 +2\color{red}{x}\color{black}{} -5
+                        \]
+                    </th>
+                    <th>
+                        <p>Segno</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                        \color{red}{2}
+                        \]
+                    </td>
+                    <td style="font-size: 0.8rem;">
+                        \[
+                        3\cdot\color{red}{2}\color{black}{}^2 +2\cdot\color{red}{2}\color{black}{} -5 = \color{blue}{}11
+                        \]
+                    </td>
+                    <td>
+                        \[
+                        \boldsymbol{\color{blue}{}+}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                        \color{red}{-1}
+                        \]
+                    </td>
+                    <td style="font-size: 0.8rem;">
+                        \[
+                        3\cdot\color{red}{\left(-1\right)}\color{black}{}^2
+                        +2\cdot\color{red}{\left(-1\right)}\color{black}{} -5 = \color{blue}{}-4
+                        \]
+                    </td>
+                    <td>
+                        \[
+                        \boldsymbol{\color{blue}{}-}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                        \color{red}{0}
+                        \]
+                    </td>
+                    <td style="font-size: 0.8rem;">
+                        \[
+                        3\cdot\color{red}{0}\color{black}{}^2 +2\cdot\color{red}{0}\color{black}{} -5 = \color{blue}{}-5
+                        \]
+                    </td>
+                    <td>
+                        \[
+                        \boldsymbol{\color{blue}{}-}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                        \color{red}{-5}
+                        \]
+                    </td>
+                    <td style="font-size: 0.8rem;">
+                        \[
+                        3\cdot\color{red}{\left(-5\right)}\color{black}{}^2
+                        +2\cdot\color{red}{\left(-5\right)}\color{black}{} -5 = \color{blue}{}110
+                        \]
+                    </td>
+                    <td>
+                        \[
+                        \boldsymbol{\color{blue}{}+}
+                        \]
+                    </td>
+                </tr>
+
+            </tbody></table>
+        </div>
+        <br>
+
+
+        Il nostro obiettivo è scoprire quali valori della \(x\) rendono il polinomio
+        <br>
+        <ul>
+            <li>
+                positivo
+            </li>
+            <li>
+                nullo
+            </li>
+            <li>
+                negativo
+            </li>
+        </ul>
+        <br>
+        In altre parole vogliamo <b>studiare il segno</b> del polinomio al variare del valore della \(x\).
+        <br>
+        Per farlo risolviamo l'equazione associata al polinomio e disegnamo la parabola che lo rappresenta:
+        \[
+        \begin{align*}
+        x = \,&amp; \dfrac{-2 \pm \sqrt{2^2 -4 \cdot 3 \cdot \left(-5\right)}}{2 \cdot 3} =
+        \\\\
+        = \,&amp; \dfrac{-2 \pm \sqrt{64}}{6} = \dfrac{-2 \pm 8}{6}
+        \end{align*}
+        \]
+        quindi
+        \[
+        \begin{align*}
+        x = \dfrac{-2 + 8}{6} \quad&amp;\text{oppure}\quad x = \dfrac{-2 - 8}{6}
+        \\\\
+        x = 1 \quad&amp;\text{oppure}\quad x = -\dfrac{5}{3}
+        \end{align*}
+        \]
+        di conseguenza la parabola che rappresenta il polinomio è la seguente
+        <br>
+        <img src="img/img_7_1.png" alt="" style="max-width: 300px; width: 50%; margin: auto; border: 0;">
+        <br>
+        A partire da questo grafico è possibile stabilire il segno del polinomio \(3x^2 +2x -5\). Infatti,
+        <br>
+        <br>
+        <ul>
+            <li>
+                i valori della \(x\) in corrispondenza dei quali il grafico si trova <b style="color: red">sopra</b>
+                l'asse
+                delle \(x\) sono quelli per cui il polinomio ha segno \(\boldsymbol{\color{red}{+}}\)
+            </li>
+            <br>
+            <li>
+                i valori della \(x\) in corrispondenza dei quali il grafico si trova <b style="color: blue">sotto</b>
+                l'asse
+                delle \(x\) sono quelli per cui il polinomio ha segno \(\boldsymbol{\color{blue}{-}}\)
+            </li>
+            <br>
+            <li>
+                i valori della \(x\) in corrispondenza dei quali il grafico <b style="color: gray">interseca</b> l'asse
+                delle \(x\) sono quelli per cui il polinomio vale \(\boldsymbol{\color{gray}{0}}\)
+            </li>
+        </ul>
+        <br>
+        Rappresentiamo queste informazioni sul grafico della parabola:
+        <br>
+        <img src="img/img_7_2.png" alt="" style="max-width: 300px; width: 50%; margin: auto; border: 0;">
+        <br>
+        Possiamo concludere che
+        <br>
+        <br>
+        <ul>
+            <li>
+                \(3x^2 +2x -5 \lt 0 \quad\)
+                <br>
+                <br>
+                se \(\,\,\,\,\,x \lt -\dfrac{5}{3}\quad\) oppure \(\quad x \gt 1\)
+            </li>
+            <br>
+            <li>
+                \(3x^2 +2x -5 = 0 \quad\)
+                <br>
+                <br>
+                se \(\,\,\,\,\,x = -\dfrac{5}{3}\quad\) oppure \(\quad x = 1\)
+            </li>
+            <br>
+            <li>
+                \(3x^2 +2x -5 \gt 0 \quad\) se
+                <br>
+                <br>
+                se \(\,\,\,\,\,\dfrac{5}{3} \lt x \lt 1\)
+            </li>
+        </ul>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Studiare il segno del polinomio
+        \[
+        -2x^2 - x + 3
+        \]
+        al variare del valore della \(x\).
+        <br>
+        <br>
+        <button id="hintCaeShAuZDn-button" onclick="showHint(`CaeShAuZDn`)">Soluzione</button>
+        <div id="hintCaeShAuZDn" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    \(-2x^2 - x + 3 \gt 0\)
+                    <br>
+                    <br>
+                    se \(\quad -\dfrac{3}{2} \lt x \lt 1 \quad\)
+                </li>
+                <br>
+                <li>
+                    \(-2x^2 - x + 3 \lt 0\)
+                    <br>
+                    <br>
+                    se \(\quad x \lt -\dfrac{3}{2} \quad\) oppure \(x \gt 1\)
+                </li>
+                <br>
+                <li>
+                    \(-2x^2 - x + 3 = 0\)
+                    <br>
+                    <br>
+                    se \(\quad x = -\dfrac{3}{2} \quad\) oppure \(x = 1\)
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <button id="hintoPUdakzyRX-button" onclick="showHint(`oPUdakzyRX`)">Svolgimento</button>
+        <div id="hintoPUdakzyRX" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+            <br>
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/5ww7R4BevY0?si=aKBcJocK9aWLTXjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Studiare il segno del polinomio
+        \[
+        6x^2 - 13x + 2
+        \]
+        al variare del valore della \(x\).
+        <br>
+        <br>
+        <button id="hintbxatMjCcwB-button" onclick="showHint(`bxatMjCcwB`)">Soluzione</button>
+        <div id="hintbxatMjCcwB" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    \(6x^2 - 13x + 2 \gt 0\)
+                    <br>
+                    <br>
+                    se \(\quad x \lt \dfrac{1}{6} \quad\) oppure \(x \gt 2\)
+                </li>
+                <br>
+                <li>
+                    \(6x^2 - 13x + 2 \lt 0\)
+                    <br>
+                    <br>
+                    se \(\quad \dfrac{1}{6} \lt x \lt 2 \quad\)
+                </li>
+                <br>
+                <li>
+                    \(6x^2 - 13x + 2 = 0\)
+                    <br>
+                    <br>
+                    se \(\quad x =\dfrac{1}{6} \quad\) oppure \(x = 2\)
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <button id="hintBgtkQWhzZf-button" onclick="showHint(`BgtkQWhzZf`)">Svolgimento</button>
+        <div id="hintBgtkQWhzZf" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+            <br>
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/cStEQVsapWM?si=mjz1llpPc8FjAGKH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Studiare il segno del polinomio
+        \[
+        -x^2 + 5
+        \]
+        al variare del valore della \(x\).
+        <br>
+        <br>
+        <button id="hintEWAfuPArZm-button" onclick="showHint(`EWAfuPArZm`)">Soluzione</button>
+        <div id="hintEWAfuPArZm" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    \(-x^2 + 5 \gt 0\)
+                    <br>
+                    <br>
+                    se \(\quad -\sqrt{5} \lt x \lt \sqrt{5} \quad\)
+                </li>
+                <br>
+                <li>
+                    \(-x^2 + 5 \lt 0\)
+                    <br>
+                    <br>
+                    se \(\quad x \lt -\sqrt{5} \quad\) oppure \(x \gt \sqrt{5}\)
+                </li>
+                <br>
+                <li>
+                    \(-x^2 + 5 = 0\)
+                    <br>
+                    <br>
+                    se \(\quad x = -\sqrt{5} \quad\) oppure \(x = \sqrt{5}\)
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <button id="hintzdIgwFuOGs-button" onclick="showHint(`zdIgwFuOGs`)">Svolgimento</button>
+        <div id="hintzdIgwFuOGs" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+            <br>
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/PbPM0DPVCJI?si=SZyajnbyWaV_psGB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Studiare il segno del polinomio
+        \[
+        2x^2 -x -6
+        \]
+        al variare del valore della \(x\).
+
+        <br>
+        <br>
+
+        <button id="hinteiaFgmYQhZ-button" onclick="showHint(`eiaFgmYQhZ`)">Soluzione</button>
+        <div id="hinteiaFgmYQhZ" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            <br>
+            \(2x^2 -x -6 \gt 0\,\,\) se \(\,\,x \lt -\dfrac{3}{2}\,\,\) oppure \(\,\, x \gt 2\)
+            <br>
+            <br>
+            \(2x^2 -x -6 \lt 0\,\,\) se \(\,\, -\dfrac{3}{2} \lt x \lt 2\)
+            <br>
+            <br>
+            \(2x^2 -x -6 = 0\,\,\) se \(\,\,x = -\dfrac{3}{2}\) oppure \(x = 2\)
+        </div>
+        
+        <br>
+
+        <button id="hintrTvlFjgpan-button" onclick="showHint(`rTvlFjgpan`)">Svolgimento</button>
+        <div id="hintrTvlFjgpan" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+            <br>
+            <iframe style="width: 100%;" src="https://www.youtube.com/embed/jvoBATCMCQI?si=s8I3UvYq2wahYLUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
