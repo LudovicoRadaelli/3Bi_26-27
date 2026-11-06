@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">    
+    <script src="../../js/mathjax-config.js"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="../../js/motoreNavigazioneSchede.js" defer=""></script>
+    <script src="../argomenti.js"></script>
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>
+        <span id="nav-prev" class="nav-arrow">◃</span>
+        Scheda <span id="scheda-num">10</span>
+        <span id="nav-next" class="nav-arrow">▹</span>
+    </h1>
+
+    <br>
+
+    <h3 class="yellow">Equazione implicita della retta</h3><div class="esempi-container">
+        Finora abbiamo studiato l'equazione <b>esplicita</b> della retta, che in
+        generale ha forma
+        \[
+        y = mx + q
+        \]
+        In questo paragrafo vediamo l'equazione <b>implicita</b> della retta, che ha forma
+        \[
+        ax + by + c = 0
+        \]
+        Vediamo un esempio concreto.
+
+        <br>
+        <br>
+
+        <b class="gray">Esempio</b>
+        <br>
+        <div class="grayBorder">
+            Consideriamo la retta di equazione implicita
+            \[
+            -10x + 5y + 1 = 0
+            \]
+            <div id="slide-containerXRNVhGlJTz" class="slide-container XRNVhGlJTz grayBorder">
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    -10x + 5y + 1 = 0
+                    \]
+                </div>
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    \color{blue}{}-10x\color{black}{} + 5y \color{blue}{}+ 1\color{black}{} = 0
+                    \]
+                </div>
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    5y = \color{blue}{}10x\color{black}{} \color{blue}{}- 1\color{black}{}
+                    \]
+                </div>
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    5y = 10x - 1
+                    \]
+                </div>
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    \dfrac{5y}{\color{blue}{5}} = \dfrac{10x - 1}{\color{blue}{5}}
+                    \]
+                </div>
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    \dfrac{\cancel{5}y}{\cancel{5}} = \dfrac{10x - 1}{\color{blue}{5}}
+                    \]
+                </div>
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    y = \dfrac{10x - 1}{\color{blue}{5}}
+                    \]
+                </div>
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    y = \dfrac{10x}{\color{blue}{5}} - \dfrac{1}{\color{blue}{5}}
+                    \]
+                </div>
+                <div class="slideXRNVhGlJTz">
+                    Isoliamo la \(y\).
+                    \[
+                    y = 2x - \dfrac{1}{5}
+                    \]
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-buttonXRNVhGlJTz" onclick="previousSlide(`XRNVhGlJTz`)">Indietro</button>
+                <button onclick="toggleFullscreen('XRNVhGlJTz')">⛶</button>
+                <button id="nextSlide-buttonXRNVhGlJTz" onclick="nextSlide(`XRNVhGlJTz`)">Avanti</button>
+            </div>
+            <br>
+            <br>
+            Abbiamo portato l'equazione dalla forma <b>implicita</b>
+            \[
+            -10x + 5y + 1 = 0
+            \] alla forma <b>esplicita</b>
+            \[
+            y = 2x - \dfrac{1}{5}
+            \]
+            In questo modo vediamo che il coefficiente angolare della retta è \(2\), mentre il suo termine noto
+            è \(-\frac{1}{5}\).
+        </div>
+
+        <br>
+        <br>
+
+        L'equazione di qualsiasi retta <b>non verticale</b> può essere scritta sia in forma esplicita che implicita.
+        L'equazione rette <b>verticali</b> invece può essere scritta solamente in forma implicita.
+        <br>
+        Vediamo il perché nel seguente esempio.
+
+        <br>
+        <br>
+
+        <b class="gray">Esempio</b>
+        <br>
+        <div class="grayBorder">
+            Scriviamo l'equazione della retta verticale rappresentata in figura.
+            <br>
+            <br>
+            <img src="img/img_10_1.png" alt="">
+            <br>
+            <br>
+
+            <div id="slide-containerkAZDkUMaAL" class="slide-container kAZDkUMaAL grayBorder">
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_1.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;\color{transparent}{}(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;\color{transparent}{}(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_2.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;\color{transparent}{}(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;\color{transparent}{}(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_2.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad \color{transparent}{}(2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;\color{transparent}{}(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_3.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad \color{transparent}{}(2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;\color{transparent}{}(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_3.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad \color{transparent}{}(2\,,\,\,0)
+                    \\\\
+                    &amp;\color{transparent}{}(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_4.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad \color{transparent}{}(2\,,\,\,0)
+                    \\\\
+                    &amp;\color{transparent}{}(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_4.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;\color{transparent}{}(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_5.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;\color{transparent}{}(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_5.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;(2\,,\,\,1) \quad \color{transparent}{}(2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_6.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;(2\,,\,\,1) \quad \color{transparent}{}(2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_6.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad \color{transparent}{}(2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_7.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Scriviamo le coordinate di una manciata di punti apparteneti alla retta.
+                    <br>
+                    <br>
+                    <img src="img/img_10_1.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(\color{red}{2}\color{black}{}\,,\,\,4) \quad (\color{red}{2}\color{black}{}\,,\,\,-3) \quad
+                    (\color{red}{2}\color{black}{}\,,\,\,0)
+                    \\\\
+                    &amp;(\color{red}{2}\color{black}{}\,,\,\,1) \quad (\color{red}{2}\color{black}{}\,,\,\,-2.5) \quad
+                    (\color{red}{2}\color{black}{}\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Tutti i punti della retta hanno coordinata \(x\) uguale a \(2\).
+                    <br>
+                    <br>
+                    <img src="img/img_10_1.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Tutti i punti della retta hanno coordinata \(x\) uguale a \(2\). Quindi l'equazione della retta è
+                    \[
+                    x = 2
+                    \]
+
+                    <img src="img/img_10_1.png" style="width: 80%;">
+                    <br>
+                    \[
+                    \begin{align*}
+                    &amp;(2\,,\,\,4) \quad (2\,,\,\,-3) \quad (2\,,\,\,0)
+                    \\\\
+                    &amp;(2\,,\,\,1) \quad (2\,,\,\,-2.5) \quad (2\,,\,\,-3)
+                    \end{align*}
+                    \]
+                </div>
+                <div class="slidekAZDkUMaAL">
+                    Tutti i punti della retta hanno coordinata \(x\) uguale a \(2\). Quindi l'equazione della retta è
+                    \[
+                    x = 2
+                    \]
+
+                    <img src="img/img_10_1.png" style="width: 80%;">
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-buttonkAZDkUMaAL" onclick="previousSlide(`kAZDkUMaAL`)">Indietro</button>
+                <button onclick="toggleFullscreen('kAZDkUMaAL')">⛶</button>
+                <button id="nextSlide-buttonkAZDkUMaAL" onclick="nextSlide(`kAZDkUMaAL`)">Avanti</button>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        L'equazione della retta verticale è \(x = 2\).
+        <br>
+        Vediamo che la forma di questa equazione non
+        è riconducibile alla forma esplicita \(y = mx + q\), perché manca la \(y\) nell'equazione.
+
+        <br>
+        <br>
+
+        Riassumendo:
+
+        <br>
+        <div class="grayBackground">
+            L'equazione di una retta <b>non verticale</b> può essere scritta sia in forma esplicita che implicita.
+            Per passare dalla forma implicita a quella esplicita basta isolare la \(y\).
+            <br>
+            <br>
+            <img src="img/img_10_8.png" alt="">
+            <br>
+
+            L'equazione di una retta <b>verticale</b> può essere scritta solo nella forma implicita \(x =
+            \text{costante}\)
+            <br>
+            <br>
+            <img src="img/img_10_9.png" alt="">
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3><br><div>
+        Consideriamo i punti 
+        \[
+            A\left(-1\,;\,\,2\right) \,\,\,\, B\left(1\,;\,\,3\right) \,\,\,\, C\left(\dfrac{4}{3}\,;\,\,-\dfrac{3}{2}\right) 
+        \]
+        Stabilire quali tra di essi appartengono alla retta associata all'equazione 
+        \[
+            3x + 2y = 1
+        \]
+
+        <div class="gray">
+            <b>Suggerimento:</b>
+            <br>
+            Perché un punto \(P(\color{red}{}x\color{gray}{}\,,\,\,\color{blue}{}y\color{gray}{})\) appartenga alla retta, le sue coordinate 
+            devono soddisfare l'equazione \(3 \cdot \color{red}{}x\color{gray}{} + 2 \cdot \color{blue}{}y\color{gray}{} = 1\).
+            <br>
+            <br>
+            Ad esempio:
+            <br>
+            <br>
+            <ul>
+                <li>
+                    il punto \(P(\color{red}{}-5\color{gray}{}\,,\,\,\color{blue}{}8\color{gray}{})\) <b>appartiene</b> alla retta perché le sue coordinate <b>soddisfano</b> l'equazione:
+                    \[
+                        \begin{align*}
+                        &amp;3 \cdot \color{red}{}(-5)\color{gray}{} + 2 \cdot \color{blue}{}8\color{gray}{} = 1
+                        \\\\
+                        &amp;-15 + 16 = 1
+                        \\\\
+                        &amp;1 = 1 \,\,\,\,\text{(vero)}
+                        \end{align*}
+                    \]
+                </li>
+                <br>
+                <li>
+                    il punto \(P(\color{red}{}5\color{gray}{}\,,\,\,\color{blue}{}7\color{gray}{})\) <b>non appartiene</b> alla retta perché le sue coordinate <b>non soddisfano</b> l'equazione:
+                    \[
+                        \begin{align*}
+                        &amp;3 \cdot \color{red}{}5\color{gray}{} + 2 \cdot \color{blue}{}7\color{gray}{} = 1
+                        \\\\
+                        &amp;15 + 14 = 1
+                        \\\\
+                        &amp;29 = 1 \,\,\,\,\text{(falso)}
+                        \end{align*}
+                    \]
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3><br><div>
+        Consideriamo i punti \(A(-2\,,\,\,7)\,\,\,\) e \(\,\,\,B(3\,,\,\,\,2)\).
+        <br>
+        Scrivere l'equazione della retta \(r\) passante per i punti \(A\) e \(B\).        
+
+        <br>
+        <br>
+
+        <button id="hintILRXSGphEu-button" onclick="showHint(`ILRXSGphEu`)">Soluzione</button>
+        <div id="hintILRXSGphEu" class="hint gray" style="display: none;">     
+            <b class="gray">Soluzione</b> 
+            <br>
+            La retta \(r\) passante per \(A\) e \(B\) ha equazione 
+            \[y = -x + 5\]
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Stabilire l'equazione della retta \(r\) passante per il punto \(P(6\,,\,\,-1)\) e parallela
+        alla retta \(s\) passante per i punti \(A(-2\,,\,\,3)\) e \(B(2\,,\,\,9)\).
+        <br>
+        <button id="hintQFceKQoMVu-button" onclick="showHint(`QFceKQoMVu`)">Soluzione</button>
+        <div id="hintQFceKQoMVu" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            L'equazione della retta \(r\) è 
+            \[
+                r: \quad y = \dfrac{3}{2}x -10
+            \]
+        </div>
+    </div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Stabilire le coordinate del punto \(P\), intersezione  tra le rette 
+        \[
+            r: \quad 5x - 4y - 9 = 0  
+        \]
+        \[
+            s: \quad 3x + 2y -23 = 0 
+        \]
+        Successivamente, stabilire l'equazione della retta \(t\) passante per \(P\) e 
+        parallela alla retta 
+        \[
+        l:\quad 6x - 3y + 1 = 0        
+        \]
+        <br>
+        <button id="hintXbSrbTvHKn-button" onclick="showHint(`XbSrbTvHKn`)">Soluzione</button>
+        <div id="hintXbSrbTvHKn" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Il punto \(P\) ha coordinate \((5\,,\,\,4)\).           
+            <br>
+            La retta \(t\) ha equazione \(y = 2x - 6\)
+        </div>
+    </div>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="../../js/motoreGeogebraFullScreen.js" defer=""></script> <!-- sempre DOPO l'iniezione degli applet -->
+    <script src="../../js/motoreQuiz.js"></script>
+    <script src="../../js/motoreQuizVideo.js"></script>
+
+    <br>
+    <br>
+
+
+
+
+</body></html>
