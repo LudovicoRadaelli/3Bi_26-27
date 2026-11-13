@@ -111,7 +111,7 @@
 }
 .fcq-front .fcq-tag{color:var(--fcq-accent);}
 .fcq-back  .fcq-tag{color:var(--fcq-verde);}
-.fcq-content{font-size:1.18rem;line-height:1.55;text-align:center;}
+.fcq-content{font-size:1.18rem;line-height:1.55;text-align:left;}
 .fcq-content p:first-child{margin-top:0;}
 .fcq-content p:last-child{margin-bottom:0;}
 
