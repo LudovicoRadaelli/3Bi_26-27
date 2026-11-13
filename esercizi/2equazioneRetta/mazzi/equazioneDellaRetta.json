@@ -1,0 +1,72 @@
+   {
+      "titolo": "equazioneDellaRetta",
+      "carte": [
+        
+        { 
+            "domanda": "Perché diciamo che \\[2x + y - 1 = 0\\] è l'<b>equazione della retta</b> mostrata in figura? <br><br> <img src=\"mazzi/img/1.png\">", 
+            "risposta": "Perché l'<b>equazione</b> \\[2x + y - 1 = 0\\] è soddisfatta da tutte e sole le coordinate \\((x,y)\\) dei punti della <b>retta</b>. <br><br> <img src=\"mazzi/img/2.png\">" 
+        },
+        { 
+            "domanda": "Come controllo se il punto \\(P(2\\,,\\,\\,-3)\\) appartiene alla retta avente la seguente equazione? \\[4x - 2y -14 = 0\\]", 
+            "risposta": "Sostituisco le sue coordinate nell'equazione. \\[4\\color{blue}{}x\\color{black}{} - 2\\color{red}{}y\\color{black}{} -14 = 0 \\qquad\\qquad P(\\color{blue}{}2\\color{black}{}\\,,\\,\\,\\color{red}{}-3\\color{black}{})\\]" 
+        },
+        { 
+            "domanda": "Cosa rappresenta graficamente il <b>coefficiente angolare</b>?", 
+            "risposta": "Il <b>coefficiente angolare</b> ci dice l'<b>inclinazione</b> della retta." 
+        },
+        { 
+            "domanda": "Cosa rappresenta graficamente il <b>coefficiente angolare</b> \\(m\\) dell'equazione della retta?", 
+            "risposta": "Il <b>coefficiente angolare</b> ci dice l'<b>inclinazione</b> della retta." 
+        },
+        { 
+            "domanda": "Cosa rappresenta graficamente il <b>termine noto</b> \\(q\\) dell'equazione della retta? <br><br> <img src=\"mazzi/img/8.png\">", 
+            "risposta": "Il <b>termine noto</b> \\(q\\) ci dice la coordinata \\(y\\) del punto di intersezione tra la retta e l'asse \\(y\\). <br><br> <img src=\"mazzi/img/9.png\">" 
+        },
+        { 
+            "domanda": "Una retta è <b>crescente</b> se ... <br><br><img src=\"mazzi/img/3.png\">", 
+            "risposta": "Una retta è <b>crescente</b> se il suo <b>coefficiente angolare</b> è <b>positivo</b> <br><br><img src=\"mazzi/img/3.png\">" 
+        },
+        { 
+            "domanda": "Una retta è <b>decrescente</b> se ... <br><br><img src=\"mazzi/img/4.png\">", 
+            "risposta": "Una retta è <b>decrescente</b> se il suo <b>coefficiente angolare</b> è <b>negativo</b> <br><br><img src=\"mazzi/img/4.png\">" 
+        },
+        { 
+            "domanda": "Una retta è <b>orizzontale</b> se ... <br><br><img src=\"mazzi/img/5.png\">", 
+            "risposta": "Una retta è <b>orizzontale</b> se il suo <b>coefficiente angolare</b> è <b>zero</b> <br><br><img src=\"mazzi/img/5.png\">" 
+        },
+        { 
+            "domanda": "Come trovo il <b>coefficiente angolare</b> della retta passante per due punti \\(A(x_A\\,,\\,\\,y_A)\\) e \\(B(x_B\\,,\\,\\,y_B)\\)? <br><br> <img src=\"mazzi/img/6.png\">", 
+            "risposta": "Il <b>coefficiente angolare</b> della retta passante per due punti \\(A\\) e \\(B\\) si trova attraverso la formula \\[m = \\dfrac{\\color{red}{}y_B - y_A}{\\color{blue}{}x_B - x_A}\\] <br><br> <img src=\"mazzi/img/7.png\">" 
+        },
+        { 
+            "domanda": "Qual è l'equazione della retta in forma <b>esplicita</b>?", 
+            "risposta": "L'equazione in forma <b>esplicita</b> è \\[y = mx + q\\]" 
+        },
+        { 
+            "domanda": "Qual è l'equazione della retta in forma <b>implicita</b>?", 
+            "risposta": "L'equazione in forma <b>implicita</b> è \\[ax + by + c = 0\\]" 
+        },
+        { 
+            "domanda": "Come si trova il <b>coefficiente angolare</b> di una retta in forma <b>implicita</b>? <br><br> Ad esempio,\\[5x + 4y + 2 = 0\\]", 
+            "risposta": "Si porta l'equazione in forma <b>esplicita</b> e si guarda il coefficiente della \\(x\\). <br><br> Nell'esempio \\[\\begin{align*}&5x + 4y + 2 = 0 \\\\\\\\ &4y = -5x -2 \\\\\\\\ &y = \\color{blue}{}-\\dfrac{5}{4}\\color{black}{}x -\\dfrac{2}{4}\\end{align*}\\] Il coefficiente angolare è \\(m = \\color{blue}{}\\dfrac{5}{4}\\)" 
+        },
+        { 
+            "domanda": "Due rette sono <b>parallele</b> se ... <br><br><img src=\"mazzi/img/10.png\">", 
+            "risposta": "Due rette sono <b>parallele</b> se i loro <b>coefficienti angolari</b> sono <b>uguali</b> \\[\\color{red}{}m_r\\color{black}{} = \\color{blue}{}m_s\\] <img src=\"mazzi/img/10.png\">" 
+        },
+        { 
+            "domanda": "Due rette sono <b>perpendicolari</b> se ... <br><br><img src=\"mazzi/img/11.png\">", 
+            "risposta": "Due rette sono <b>perpendicolari</b> se il prodotto dei coefficienti angolari è \\(-1\\) \\[\\color{red}{}m_r\\color{black}{} \\cdot \\color{blue}{}m_s\\color{black}{} = -1\\] <img src=\"mazzi/img/11.png\">" 
+        },
+        { 
+            "domanda": "Come si trova il punto \\(P\\) di <b>intersezione</b> tra due rette \\(r\\) ed \\(s\\)? <br><br><img src=\"mazzi/img/12.png\">", 
+            "risposta": "Si mettono a <b>sistema</b> le le loro equazioni. <br><br> <img src=\"mazzi/img/12.png\">" 
+        },
+        { 
+            "domanda": "Come troviamo la <b>distanza</b> tra due punti \\(A\\) e \\(B\\)? \\[A(x_A\\,,\\,\\,y_A) \\quad\\text{e}\\quad B(x_B\\,,\\,\\,y_B)\\]  <br> <img src=\"mazzi/img/13.png\">", 
+            "risposta": "Usiamo la formula della distanza tra due punti \\[AB = \\sqrt{(\\color{blue}{}x_B - x_A\\color{black}{})^2 + (\\color{red}{}y_B - y_A\\color{black}{})^2}\\]<br> <img src=\"mazzi/img/14.png\">" 
+        }
+      ]
+    }
+
+    
